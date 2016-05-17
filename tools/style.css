@@ -82,6 +82,7 @@ float: left;
 width: 500px;
 height: 95px;
 padding: 25px;
+text-align: justify; 
 }
 
 form{
@@ -116,7 +117,7 @@ float: left;
 ul.info li{
 margin-bottom: 20px;
 clear: both;
-float: left;
+float: right;
 }
 
 ul.info li p{
