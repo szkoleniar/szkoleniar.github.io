@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.18.1" />
+
+
+<title>Przekazanie funkcji jako argumentu do innej funkcji? Parę przykładów z wykorzystaniem xts i szeregów czasowych - szkoleniaR.pl</title>
+<meta property="og:title" content="Przekazanie funkcji jako argumentu do innej funkcji? Parę przykładów z wykorzystaniem xts i szeregów czasowych - szkoleniaR.pl">
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="../../../../">Home</a></li>
+    
+    <li><a href="../../../../resources/">Materiały</a></li>
+    
+    <li><a href="../../../../about/">O co chodzi?</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">3 min read</span>
+    
+
+    <h1 class="article-title">Przekazanie funkcji jako argumentu do innej funkcji? Parę przykładów z wykorzystaniem xts i szeregów czasowych</h1>
+
+    
+    <span class="article-date">2017/05/25</span>
+    
+
+    <div class="article-content">
+      <p>Pierwsze warsztaty organizowane przez szkoleniaR.pl w 2017 odbyły się 25 kwietna na konferencji <strong>DATA SCIENCE? AGHree!</strong>. Dotyczyły wykonywania różnych operacji na szeregach czasowych z wykorzystaniem pakietu <code>xts</code> i funkcji <code>rollapply</code> (z pakietu <code>zoo</code>). Była też trochę mowa o tym czym jest <code>environment</code> i jak może zostać wykorzystany do delikatnego <em>oszukania</em> funkcji <code>rollapply</code> by móc zebrać wyniki z każdej możliwej funkcji (niestety <code>rollapply</code> nie zawsze daje sobie z tym radę i trzeba mu pomóc).</p>
+<p>Materiały można znaleźć w repozytorium na GitHubie (tutaj skrócony link: <a href="https://rmat.pl/warsztaty-xts" class="uri">https://rmat.pl/warsztaty-xts</a>).</p>
+<div id="szybkie-podsumowanie" class="section level1">
+<h1>Szybkie podsumowanie:</h1>
+<p>Po warsztatach przeprowadzona została krótka ankieta. Poniżej prezentowana jest skrócona analiza wyników;</p>
+<ul>
+<li>Ilość odpowiedzi: 10</li>
+</ul>
+<div id="gowne-bolaczki-uczestnikow" class="section level3">
+<h3>Główne bolączki uczestników:</h3>
+<ol style="list-style-type: decimal">
+<li>Późna pora - niestety późna pora była trochę czynnikiem zewnętrznym. Jednak na przyszłość trzeba ją brać pod uwagę, gdyż to właśnie ona najczęściej przewijała się w ankiecie jako największy problem warsztatów</li>
+<li>Momentami zbyt szybko - w tym zakresie muszę popracować trochę nad metodą komunikacji z uczestnikami, by lepiej widzieć, czy jeszcze trzeba poczekać, czy można iść dalej z materiałem (testy pewnej koncepcji już na następnych warsztatach:)).</li>
+<li>Mało wizualizacji danych - tutaj rzeczywiście jest pole do poprawy. Użycie wykresów na pewno ułatwia odbiór prezentowanych treści i pozwala lepiej zorientować się co aktualnie dzieje się z danymi.</li>
+<li>Brak pomocnej literatury - to jest łatwe do poprawy;) Uaktualnione materiały już wkrótce pojawią się w repo.</li>
+</ol>
+</div>
+<div id="a-co-byo-dobrze" class="section level3">
+<h3>A co było dobrze:</h3>
+<ol style="list-style-type: decimal">
+<li><em>Tempo prowadzenia</em> - niektórym uczestnikom tempo warsztatów bardzo się podobało:) Jednak cały czas uważam, że zarządzaniem szybkością przekazywania wiedzy to pole do największego popisu.</li>
+<li><em>Jasny sposób przekazywania wiedzy</em> - jest to chyba najważniejsza sprawa w prowadzeniu warsztatów. Także bardzo się cieszę, że udało się uzyskać ten efekt.</li>
+<li><em>Stała widoczność tworzonego kodu</em> - kod był tworzony na bieżąco (nie było wyświetlanego wcześniej przygotowanego kodu z prezentacji), także pewnie to był czynnik który ułatwił odbiór. Tutaj na pewno tego się będę trzymał:)</li>
+<li><em>Opis kodu i repozytorium</em> - pracując w R chyba najłatwiejszym sposobem przygotowania warsztatów jest stworzenie wszystkiego w Rmarkdown. Późniejsza publikacja materiałów nie jest już wtedy żadnym problemem.</li>
+</ol>
+</div>
+<div id="ocena-punktowa" class="section level2">
+<h2>Ocena punktowa:</h2>
+<div id="tematyka" class="section level3">
+<h3>Tematyka:</h3>
+<p>Niestety nie udało się trafić idealnie w potrzeby uczestników dotyczące tematyki warsztatów. Tak bywa w przypadku, gdy temat zostaje narzucony przez prowadzącego bez wcześniejszej konsultacji z grupą docelową:( W przyszłości na pewno uda się poprawić ten wynik, choć i tak nie było tak źle - najniższa ocena to 6, a trafiły się nawet 10. Wykres poniżej:</p>
+<p><img src="../../../../post/2017-04-25-xts_files/figure-html/unnamed-chunk-2-1.svg" width="576" /></p>
+</div>
+<div id="prowadzacy" class="section level3">
+<h3>Prowadzący:</h3>
+<p>Do wyników dotyczących prowadzącego podchodzę z rezerwą, gdyż wyglądają trochę zbyt dobrze…;)</p>
+<p><img src="../../../../post/2017-04-25-xts_files/figure-html/unnamed-chunk-3-1.svg" width="576" /></p>
+</div>
+<div id="ogolna-ocena" class="section level3">
+<h3>Ogólna ocena:</h3>
+<p>Końcowa ocena warsztatów jest jest bardzo satysfakcjonująca. W przyszłości na pewno trzeba poświęcić trochę więcej czasu na ustalenie tematu z grupą docelową, by lepiej trafić w potrzeby uczestników. Warto również postarać się o organizację warsztatów o trochę wcześniejszej porze - o godzinie 18 ciężko już myśleć:)</p>
+<p><img src="../../../../post/2017-04-25-xts_files/figure-html/unnamed-chunk-4-1.svg" width="576" /></p>
+</div>
+</div>
+<div id="chciabys-dowiedziec-sie-wiecej-o-r-pisz-na-adres-zygmuntzstat.pl" class="section level2">
+<h2>Chciałbyś dowiedzieć się wiecej o R? Pisz na adres <a href="mailto:zygmunt@zstat.pl">zygmunt@zstat.pl</a></h2>
+</div>
+</div>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="../../../../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="../../../../images/hugo-logo.png" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+
+    
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-80778306-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+  </body>
+</html>
+

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on szkoleniaR.pl</title>
+    <link>/post/index.xml</link>
+    <description>Recent content in Posts on szkoleniaR.pl</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 25 May 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Przekazanie funkcji jako argumentu do innej funkcji? Parę przykładów z wykorzystaniem xts i szeregów czasowych</title>
+      <link>/2017/05/25/przekazanie-funkcji-jako-argumentu-do-innej-funkcji-par%C4%99-przyk%C5%82ad%C3%B3w-z-wykorzystaniem-xts-i-szereg%C3%B3w-czasowych/</link>
+      <pubDate>Thu, 25 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/05/25/przekazanie-funkcji-jako-argumentu-do-innej-funkcji-par%C4%99-przyk%C5%82ad%C3%B3w-z-wykorzystaniem-xts-i-szereg%C3%B3w-czasowych/</guid>
+      <description>&lt;p&gt;Pierwsze warsztaty organizowane przez szkoleniaR.pl w 2017 odbyły się 25 kwietna na konferencji &lt;strong&gt;DATA SCIENCE? AGHree!&lt;/strong&gt;. Dotyczyły wykonywania różnych operacji na szeregach czasowych z wykorzystaniem pakietu &lt;code&gt;xts&lt;/code&gt; i funkcji &lt;code&gt;rollapply&lt;/code&gt; (z pakietu &lt;code&gt;zoo&lt;/code&gt;). Była też trochę mowa o tym czym jest &lt;code&gt;environment&lt;/code&gt; i jak może zostać wykorzystany do delikatnego &lt;em&gt;oszukania&lt;/em&gt; funkcji &lt;code&gt;rollapply&lt;/code&gt; by móc zebrać wyniki z każdej możliwej funkcji (niestety &lt;code&gt;rollapply&lt;/code&gt; nie zawsze daje sobie z tym radę i trzeba mu pomóc).&lt;/p&gt;
+&lt;p&gt;Materiały można znaleźć w repozytorium na GitHubie (tutaj skrócony link: &lt;a href=&#34;https://rmat.pl/warsztaty-xts&#34; class=&#34;uri&#34;&gt;https://rmat.pl/warsztaty-xts&lt;/a&gt;).&lt;/p&gt;
+&lt;div id=&#34;szybkie-podsumowanie&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Szybkie podsumowanie:&lt;/h1&gt;
+&lt;p&gt;Po warsztatach przeprowadzona została krótka ankieta. Poniżej prezentowana jest skrócona analiza wyników;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ilość odpowiedzi: 10&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&#34;gowne-bolaczki-uczestnikow&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Główne bolączki uczestników:&lt;/h3&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Późna pora - niestety późna pora była trochę czynnikiem zewnętrznym. Jednak na przyszłość trzeba ją brać pod uwagę, gdyż to właśnie ona najczęściej przewijała się w ankiecie jako największy problem warsztatów&lt;/li&gt;
+&lt;li&gt;Momentami zbyt szybko - w tym zakresie muszę popracować trochę nad metodą komunikacji z uczestnikami, by lepiej widzieć, czy jeszcze trzeba poczekać, czy można iść dalej z materiałem (testy pewnej koncepcji już na następnych warsztatach:)).&lt;/li&gt;
+&lt;li&gt;Mało wizualizacji danych - tutaj rzeczywiście jest pole do poprawy. Użycie wykresów na pewno ułatwia odbiór prezentowanych treści i pozwala lepiej zorientować się co aktualnie dzieje się z danymi.&lt;/li&gt;
+&lt;li&gt;Brak pomocnej literatury - to jest łatwe do poprawy;) Uaktualnione materiały już wkrótce pojawią się w repo.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id=&#34;a-co-byo-dobrze&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;A co było dobrze:&lt;/h3&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;em&gt;Tempo prowadzenia&lt;/em&gt; - niektórym uczestnikom tempo warsztatów bardzo się podobało:) Jednak cały czas uważam, że zarządzaniem szybkością przekazywania wiedzy to pole do największego popisu.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Jasny sposób przekazywania wiedzy&lt;/em&gt; - jest to chyba najważniejsza sprawa w prowadzeniu warsztatów. Także bardzo się cieszę, że udało się uzyskać ten efekt.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Stała widoczność tworzonego kodu&lt;/em&gt; - kod był tworzony na bieżąco (nie było wyświetlanego wcześniej przygotowanego kodu z prezentacji), także pewnie to był czynnik który ułatwił odbiór. Tutaj na pewno tego się będę trzymał:)&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Opis kodu i repozytorium&lt;/em&gt; - pracując w R chyba najłatwiejszym sposobem przygotowania warsztatów jest stworzenie wszystkiego w Rmarkdown. Późniejsza publikacja materiałów nie jest już wtedy żadnym problemem.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ocena-punktowa&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Ocena punktowa:&lt;/h2&gt;
+&lt;div id=&#34;tematyka&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Tematyka:&lt;/h3&gt;
+&lt;p&gt;Niestety nie udało się trafić idealnie w potrzeby uczestników dotyczące tematyki warsztatów. Tak bywa w przypadku, gdy temat zostaje narzucony przez prowadzącego bez wcześniejszej konsultacji z grupą docelową:( W przyszłości na pewno uda się poprawić ten wynik, choć i tak nie było tak źle - najniższa ocena to 6, a trafiły się nawet 10. Wykres poniżej:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../post/2017-04-25-xts_files/figure-html/unnamed-chunk-2-1.svg&#34; width=&#34;576&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;prowadzacy&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Prowadzący:&lt;/h3&gt;
+&lt;p&gt;Do wyników dotyczących prowadzącego podchodzę z rezerwą, gdyż wyglądają trochę zbyt dobrze…;)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../post/2017-04-25-xts_files/figure-html/unnamed-chunk-3-1.svg&#34; width=&#34;576&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ogolna-ocena&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Ogólna ocena:&lt;/h3&gt;
+&lt;p&gt;Końcowa ocena warsztatów jest jest bardzo satysfakcjonująca. W przyszłości na pewno trzeba poświęcić trochę więcej czasu na ustalenie tematu z grupą docelową, by lepiej trafić w potrzeby uczestników. Warto również postarać się o organizację warsztatów o trochę wcześniejszej porze - o godzinie 18 ciężko już myśleć:)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../post/2017-04-25-xts_files/figure-html/unnamed-chunk-4-1.svg&#34; width=&#34;576&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;chciabys-dowiedziec-sie-wiecej-o-r-pisz-na-adres-zygmuntzstat.pl&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Chciałbyś dowiedzieć się wiecej o R? Pisz na adres &lt;a href=&#34;mailto:zygmunt@zstat.pl&#34;&gt;zygmunt@zstat.pl&lt;/a&gt;&lt;/h2&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
